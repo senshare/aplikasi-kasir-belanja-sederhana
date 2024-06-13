@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aplikasi Kasir Belanja</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Aplikasi Kasir Belanja</h1>
+    <div id="cart">
+        <h2>Keranjang Belanja</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: Rp <span id="total">0</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+    <div id="store">
+        <h2>Daftar Barang</h2>
+        <ul id="store-items">
+            <li>
+                <span>Pensil</span>
+                <span>Rp. 50.000 </span>
+                <button onclick="addItem('Pensil', 50000)">Beli</button>
+            </li>
+            <li>
+                <span>Pulpen</span>
+                <span>Rp. 25.000 </span>
+                <button onclick="addItem('Pensil', 25000)">Beli</button>
+            </li>
+            <li>
+                <span>Spidol</span>
+                <span>Rp. 15.000 </span>
+                <button onclick="addItem('Spidol', 15000)">Beli</button>
+            </li>
+
+        </ul>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
